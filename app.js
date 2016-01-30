@@ -5,7 +5,7 @@ var config   = require('./config')
   , db       = {}
 
 // connect mongoose
-mongoose.connect(config.db, { server: { keepAlive: 1, auto_reconnect: true } })
+mongoose.connect('mongodb://admin:admin@ds051655.mongolab.com:51655/psd_database', { server: { keepAlive: 1, auto_reconnect: true } })
 var conn = mongoose.connection
 
 // mongoose connection 'error'
